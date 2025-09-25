@@ -21,7 +21,7 @@ body {
     padding: 0;
 }
 
-.footer {
+footer {
     height: 16px;
     bottom: 0px;
     position: fixed;
@@ -38,12 +38,12 @@ body {
     transition-duration: 0.3s;
 }
 
-    .footer:hover {
+    footer:hover {
         box-shadow: 0 2px 8px #bbb;
         background-color: rgba(248, 248, 255, 0.8);
     }
 
-.footerText {
+footer p {
     font-size: 12px;
     margin-top: 0;
     color: #353535;
