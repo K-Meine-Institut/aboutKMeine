@@ -1,54 +1,231 @@
-/* style.css - Basisstil für Künstler/Institut Seite, inspiriert von AboutMe */
+/*
+    moderner Stil.
+*/
+
+html {
+    background-color: black;
+    font-family: Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+    color: ghostwhite;
+}
+
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f7f7;
-    color: #222;
-}
-header {
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     padding: 0;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 1.2rem 0;
+
+.footer {
+    height: 16px;
+    bottom: 0px;
+    position: fixed;
+    background-color: rgba(248, 248, 255, 0.4);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px #bbb;
+    outline: 2px solid black;
+    width: calc(100% - 20px);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    transition-duration: 0.3s;
 }
+
+    .footer:hover {
+        box-shadow: 0 2px 8px #bbb;
+        background-color: rgba(248, 248, 255, 0.8);
+    }
+
+.footerText {
+    font-size: 12px;
+    margin-top: 0;
+    color: #353535;
+}
+
+.navbar {
+    background-color: rgba(248, 248, 255, 0.4);
+    height: 50px;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    top: 0px;
+    box-shadow: 0 2px 4px #bbb;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    outline: 2px solid black;
+    width: calc(100% - 20px);
+    z-index: 10;
+    transition-duration: 0.3s;
+}
+
+    .navbar:hover {
+        box-shadow: 0 2px 8px #bbb;
+        background-color: rgba(248, 248, 255, 0.8);
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+li {
+    display: inline;
+    margin: 15px;
+}
+
 nav a {
     text-decoration: none;
-    color: #222;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
+    color: #353535;
+    display: inline-block;
+    padding-top: 15px;
 }
-nav a:hover, nav a.active {
-    background: #e0e0e0;
-    color: #0078d7;
-}
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-    padding: 2rem;
-}
-footer {
-    text-align: center;
-    color: #888;
-    font-size: 0.95rem;
-    margin: 2rem 0 1rem 0;
-}
-@media (max-width: 600px) {
+
+    nav a:hover {
+        color: #00b2b2;
+        transform: scale(1.02);
+    }
+
+    nav a:active {
+        font-weight: bold;
+    }
+
+@media screen and (max-width: 700px) {
     nav {
-        flex-direction: column;
-        gap: 0.5rem;
+        width: 100%;
+        margin-top: -5px;
     }
-    main {
-        padding: 1rem;
-    }
+
+        nav li {
+            display: block;
+            background-color: #e5e5e5;
+            text-align: center;
+        }
 }
+
+a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: lightgoldenrodyellow;
+    }
+
+    a:active {
+        font-weight: bold;
+    }
+
+h2 {
+    font-size: 32px;
+}
+
+.photoElement {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #bbb;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+
+    .photoElement:hover {
+        box-shadow: 0 6px 16px #bbb;
+        width: 52%;
+    }
+
+details {
+    text-align: center;
+}
+
+summary {
+    text-align: center;
+}
+
+div.vHover {
+    filter: blur(6px);
+    display: inline;
+    background-color: gainsboro;
+    transition-duration: 1s;
+}
+
+    div.vHover:hover {
+        filter: none;
+        background-color: inherit;
+    }
+
+button.commentTimeButton {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: medium;
+    margin: 0px;
+    transition-duration: 0.3s;
+    border-radius: 4px;
+}
+
+    button.commentTimeButton:hover {
+        margin-left: 10px;
+        margin-right: 10px;
+        box-shadow: 0 1px 2px #bbb;
+    }
+
+button.buttonSwitchMP {
+    background-color: transparent;
+    outline: none;
+    transition: background 0.5s, box-shadow 0.4s, transform 0.2s;
+    border: 1px dashed #353535;
+    border-radius: 8px;
+    height: 42px;
+    font-family: Verdana, sans-serif;
+    position: absolute;
+    margin-top: 3px;
+    padding: 0 18px;
+    color: #353535;
+    box-shadow: 0 1px 2px #bbb;
+}
+
+    button.buttonSwitchMP:hover {
+        background: radial-gradient(circle, #fff 60%, #c8323c 100%);
+        box-shadow: 0 0 12px 2px #c8323c55, 0 1px 2px #bbb;
+        color: #c8323c;
+        transform: scale(1.02);
+    }
+
+img.navBarImage {
+    box-shadow: 0 2px 4px #bbb;
+    border-radius: 8px;
+    margin-left: 3px;
+}
+
+p.announcement {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: inherit;
+}
+
+.fly-in-text {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+    filter: blur(6px);
+    transition: opacity 0.7s cubic-bezier(.5,1.8,.5,1), transform 0.7s cubic-bezier(.5,1.8,.5,1), filter 0.7s cubic-bezier(.5,1.8,.5,1), text-shadow 0.7s;
+}
+
+    .fly-in-text.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1.04);
+        filter: blur(0);
+        text-shadow: 0 0 12px #c8323c88;
+    }
