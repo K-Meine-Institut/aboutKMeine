@@ -8,7 +8,7 @@ html {
 }
 
 main {
-    margin-top: 65px;
+    margin-top: 75px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -90,10 +90,11 @@ nav a {
     text-decoration: none;
     color: #353535;
     display: inline-block;
-    padding-top: 15px;
+    margin-top: 12px;
     margin-right: 10px;
     transition: color 0.3s, transform 0.2s;
     border-radius: 4px;
+    padding: 3px;
 }
 
     nav a:hover {
