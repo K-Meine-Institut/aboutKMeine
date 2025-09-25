@@ -1,7 +1,6 @@
 form.contactForm {
     max-width: 400px;
     margin: 2rem auto;
-    display: flex;
     flex-direction: column;
     align-content: center;
     align-self: center;
