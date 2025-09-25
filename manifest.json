@@ -1,0 +1,17 @@
+{
+  "lang": "de-de",
+  "name": "K. Meine",
+  "short_name": "KMeine",
+  "description": "Seite ueber K. Meine",
+  "orientation": "landscape-primary",
+  "start_url": "https://k-meine-institut.github.io/aboutKMeine/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./images/bueste.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ]
+}
+  
