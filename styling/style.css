@@ -91,11 +91,15 @@ nav a {
     color: #353535;
     display: inline-block;
     padding-top: 15px;
+    margin-right: 10px;
+    transition: color 0.3s, transform 0.2s;
+    border-radius: 4px;
 }
 
     nav a:hover {
         color: #00b2b2;
         transform: scale(1.02);
+        background-color: #e5e5e5;
     }
 
     nav a:active {
