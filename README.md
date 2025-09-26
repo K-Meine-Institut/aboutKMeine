@@ -2,7 +2,7 @@
 website about K Meine
 
 <br/>
-further description tbh
+further description to be here
 
 ## Credits
 <li>most development by Leander Kafemann<br/>
