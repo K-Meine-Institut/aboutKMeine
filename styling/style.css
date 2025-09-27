@@ -21,6 +21,18 @@ body {
     padding: 0;
 }
 
+div.footerContainer {
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    transition-duration: 0.7s;
+    display: none;
+}
+
+    div.footerContainer:hover {
+        display: inherit;
+    }
+
 footer {
     height: 16px;
     bottom: 0px;
