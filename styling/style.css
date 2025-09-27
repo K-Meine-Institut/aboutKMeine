@@ -39,9 +39,9 @@ footer {
     outline: 2px solid black;
     backdrop-filter: blur(5px);
     z-index: 10;
-    transition-duration: 0.7s;
-    width: 40px;
-    margin-left: calc(50% - 20px);
+    transition-duration: 1.5s;
+    width: 100px;
+    margin-left: calc(50% - 50px);
 }
 
     footer:hover {
@@ -52,31 +52,35 @@ footer {
         width: calc(100% - 20px);
     }
 
-footer p {
-    position: absolute;
-}
-
-footer p.correct {
-    font-size: 12px;
-    margin-top: 0;
-    color: transparent;
-    transition-duration: 0.3s;
-}
-
-    footer p.correct:hover {
-        color: #353535;
+    footer p {
+        position: fixed;
+        font-size: 12px;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        border-radius: 4px;
     }
 
-footer p.placeholder {
-    font-size: 12px;
-    margin-top: 0;
-    color: #353535;
-    transition-duration: 0.1s;
-}
+        footer p.correct {
+            color: transparent;
+            transition-duration: 0.3s;
+            z-index: 12;
+        }
 
-    footer p.placeholder:hover {
-        color: transparent;
-    }
+            footer p.correct:hover {
+                color: #353535;
+                background-color: rgba(248, 248, 255)
+            }
+
+        footer p.placeholder {
+            color: #353535;
+            transition-duration: 0.1s;
+            z-index: 11;
+        }
+
+            footer p.placeholder:hover {
+                color: transparent;
+            }
 
 navbar {
     background-color: rgba(248, 248, 255, 0.4);
