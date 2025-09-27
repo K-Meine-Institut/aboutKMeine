@@ -26,13 +26,13 @@ div.footerContainer {
     position: fixed;
     bottom: 0px;
     transition-duration: 0.7s;
-    width: 30px;
+    max-width: 30px;
     overflow: hidden;
 }
 
     div.footerContainer:hover {
         display: inherit;
-        width: 100%;
+        max-width: 100%;
     }
 
 footer {
