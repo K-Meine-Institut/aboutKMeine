@@ -22,18 +22,11 @@ body {
 }
 
 div.footerContainer {
-    height: 50px;
-    position: fixed;
-    bottom: 0px;
-    transition-duration: 0.7s;
-    max-width: 30px;
-    overflow: hidden;
+    text-align: center;
 }
 
-    div.footerContainer:hover {
-        display: inherit;
-        max-width: 100%;
-    }
+    /*div.footerContainer:hover {
+    }*/
 
 footer {
     height: 16px;
@@ -41,27 +34,49 @@ footer {
     position: fixed;
     background-color: rgba(248, 248, 255, 0.4);
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     border-radius: 6px;
     box-shadow: 0 2px 4px #bbb;
     outline: 2px solid black;
-    width: calc(100% - 20px);
     backdrop-filter: blur(5px);
     z-index: 10;
-    transition-duration: 0.3s;
+    transition-duration: 0.7s;
+    width: 40px;
+    margin-left: calc(50% - 20px);
 }
 
     footer:hover {
         box-shadow: 0 2px 8px #bbb;
         background-color: rgba(248, 248, 255, 0.8);
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px);
     }
 
 footer p {
+    position: absolute;
+}
+
+footer p.correct {
+    font-size: 12px;
+    margin-top: 0;
+    color: transparent;
+    transition-duration: 0.3s;
+}
+
+    footer p.correct:hover {
+        color: #353535;
+    }
+
+footer p.placeholder {
     font-size: 12px;
     margin-top: 0;
     color: #353535;
+    transition-duration: 0.1s;
 }
+
+    footer p.placeholder:hover {
+        color: transparent;
+    }
 
 navbar {
     background-color: rgba(248, 248, 255, 0.4);
