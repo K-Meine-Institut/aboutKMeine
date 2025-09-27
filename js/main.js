@@ -1,11 +1,13 @@
-// script.js - Navigation und kleine Interaktionen
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Navigation Highlight
     const navLinks = document.querySelectorAll('nav a');
-    const current = location.pathname.split('/').pop();
+    const currentUrl = window.location.href.split('#')[0];
+
     navLinks.forEach(link => {
-        if(link.getAttribute('href') === current || (link.getAttribute('href') === 'index.html' && current === '')) {
+        // Vergleiche die href-URL ohne Hash und ohne Trailing-Slash
+        let linkUrl = link.href.split('#')[0].replace(/\/$/, '');
+        let pageUrl = currentUrl.replace(/\/$/, '');
+
+        if (linkUrl === pageUrl) {
             link.classList.add('active');
         }
     });

@@ -26,11 +26,13 @@ div.footerContainer {
     position: fixed;
     bottom: 0px;
     transition-duration: 0.7s;
-    display: none;
+    width: 20px;
+    overflow: hidden;
 }
 
     div.footerContainer:hover {
         display: inherit;
+        width: 100%;
     }
 
 footer {
@@ -59,6 +61,16 @@ footer p {
     font-size: 12px;
     margin-top: 0;
     color: #353535;
+}
+
+@media (width: 700px) {
+    footer p {
+        display: none;
+    }
+
+    footer {
+        width: 15px;
+    }
 }
 
 navbar {
@@ -117,6 +129,11 @@ nav a {
 
     nav a:active {
         font-weight: bold;
+    }
+
+    nav a.active {
+        background: #e0e0e0;
+        color: #0078d7;
     }
 
 @media screen and (max-width: 700px) {
