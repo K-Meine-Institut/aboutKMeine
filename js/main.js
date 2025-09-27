@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(link => {
         // Vergleiche die href-URL ohne Hash und ohne Trailing-Slash
-        let linkUrl = link.href.split('#')[0].replace(/\/$/, '');
-        let pageUrl = currentUrl.replace(/\/$/, '');
+        let linkUrl = link.href.split('#')[0].replace(/\/$/, '').replace("index.html", "");
+        let pageUrl = currentUrl.replace(/\/$/, '').replace("index.html", "");
 
         if (linkUrl === pageUrl) {
             link.classList.add('active');
