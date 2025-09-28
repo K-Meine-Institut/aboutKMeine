@@ -64,14 +64,15 @@ footer {
 
         footer p.correct {
             color: transparent;
-            transition-duration: 0.3s;
-            transition-delay: 0.1s;
+            transition-duration: 0.5s;
+            transition-delay: 0.7s;
             z-index: 12;
         }
 
             footer p.correct:hover {
                 color: #353535;
-                background-color: rgba(248, 248, 255)
+                background-color: rgba(248, 248, 255);
+                transition-delay: 0.3s;
             }
 
         footer p.placeholder {
@@ -83,7 +84,7 @@ footer {
 
             footer p.placeholder:hover {
                 color: transparent;
-                transition-delay: 0.3s;
+                transition-delay: 0.5s;
             }
 
 navbar {
@@ -229,28 +230,6 @@ button.commentTimeButton {
         margin-left: 10px;
         margin-right: 10px;
         box-shadow: 0 1px 2px #bbb;
-    }
-
-button.buttonSwitchMP {
-    background-color: transparent;
-    outline: none;
-    transition: background 0.5s, box-shadow 0.4s, transform 0.2s;
-    border: 1px dashed #353535;
-    border-radius: 8px;
-    height: 42px;
-    font-family: Verdana, sans-serif;
-    position: absolute;
-    margin-top: 3px;
-    padding: 0 18px;
-    color: #353535;
-    box-shadow: 0 1px 2px #bbb;
-}
-
-    button.buttonSwitchMP:hover {
-        background: radial-gradient(circle, #fff 60%, #c8323c 100%);
-        box-shadow: 0 0 12px 2px #c8323c55, 0 1px 2px #bbb;
-        color: #c8323c;
-        transform: scale(1.02);
     }
 
 img.navBarImage {
