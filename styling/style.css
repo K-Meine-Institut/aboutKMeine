@@ -65,7 +65,7 @@ footer {
         footer p.correct {
             color: transparent;
             transition-duration: 0.5s;
-            transition-delay: 0.7s;
+            transition-delay: 0.5s;
             z-index: 12;
         }
 
