@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         left.innerHTML = "&#8592;";
         left.className = "nav-arrow left";
         left.onclick = function () {
-            setActive((currentIndex - 1 + links.length) % links.length);
-            showCurrentOnly();
+            const newIndex = (currentIndex - 1 + links.length) % links.length;
+            window.location.href = links[newIndex].href;
         };
         nav.insertBefore(left, links[0]);
     }
@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
         right.innerHTML = "&#8594;";
         right.className = "nav-arrow right";
         right.onclick = function () {
-            setActive((currentIndex + 1) % links.length);
-            showCurrentOnly();
+            const newIndex = (currentIndex + 1) % links.length;
+            window.location.href = links[newIndex].href;
         };
         nav.appendChild(right);
     }

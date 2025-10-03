@@ -27,3 +27,19 @@
         display: inline-block;
     }
 }
+
+
+#main-nav .nav-arrow {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #333;
+    transition: color 0.2s, transform 0.2s;
+}
+
+    #main-nav .nav-arrow:hover {
+        color: #0078d7;
+        transform: scale(1.2);
+    }
