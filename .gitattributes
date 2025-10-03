@@ -5,3 +5,6 @@
 *.json linguist-language=JSON
 *.json linguist-detectable=true
 *.json linguist-documentation=false
+
+*.txt linguist-language=Text
+*.txt linguist-detectable=true
