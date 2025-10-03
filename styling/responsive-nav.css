@@ -1,0 +1,29 @@
+#main-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+}
+
+    #main-nav .nav-arrow {
+        display: none;
+        cursor: pointer;
+        font-size: 1.5em;
+        background: none;
+        border: none;
+        color: #333;
+    }
+
+@media (max-width: 600px) {
+    #main-nav a {
+        display: none;
+    }
+
+        #main-nav a.active {
+            display: inline-block;
+        }
+
+    #main-nav .nav-arrow {
+        display: inline-block;
+    }
+}
