@@ -54,3 +54,17 @@
         margin-left: 4.5%;
         margin-right: 4.5%;
     }
+
+@media screen and (max-width: 600px) {
+    .oval {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .oval:hover {
+        width: 91%;
+        margin-left: 4.5%;
+        margin-right: 4.5%;
+    }
+}

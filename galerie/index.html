@@ -3,39 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Galerie – K. Meine Institut</title>
+    <meta name="author" content="Leander Kafemann" />
+    <meta name="keywords" content="K. Meine, Galerie, Büste, Wiener Musikverein, Bilder" />
+    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs" />
+    <link rel="manifest" href="https://k-meine-institut.github.io/aboutKMeine/manifest.json" />
+    <link rel="icon" type="image/jpeg" href="../images/bueste.jpg" />
+    <!-- PowerKit -->
+    <link rel="stylesheet" href="https://leanderkafemann.github.io/PowerKit/powerkit.css" />
+    <link rel="stylesheet" href="https://leanderkafemann.github.io/PowerKit/powerkit-pro.css" />
+    <!-- Site styles -->
+    <link rel="stylesheet" href="https://k-meine-institut.github.io/aboutKMeine/styling/style.css" />
+    <link rel="stylesheet" href="https://k-meine-institut.github.io/aboutKMeine/styling/box.css" />
+    <link rel="stylesheet" href="https://k-meine-institut.github.io/aboutKMeine/styling/forms.css" />
+    <link rel="stylesheet" href="https://k-meine-institut.github.io/aboutKMeine/styling/responsive-nav.css" />
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="aktuelles.html">Aktuelles</a>
-            <a href="kuenstler.html">K�nstlername</a>
-            <a href="institut.html">Institut</a>
-            <a href="galerie.html">Galerie</a>
-            <a href="kontakt.html">Kontakt</a>
+<body class="pk-dark">
+    <navbar>
+        <nav id="main-nav">
+            <a href="https://k-meine-institut.github.io/aboutKMeine/">Startseite</a>
+            <a href="https://k-meine-institut.github.io/aboutKMeine/aktuelles/">Aktuelles</a>
+            <a href="https://k-meine-institut.github.io/aboutKMeine/kuenstler/">K. Meine</a>
+            <a href="https://k-meine-institut.github.io/aboutKMeine/institut/">Institut</a>
+            <a href="https://k-meine-institut.github.io/aboutKMeine/galerie/">Galerie</a>
+            <a href="https://k-meine-institut.github.io/aboutKMeine/kontakt/">Kontakt</a>
         </nav>
-    </header>
-    <main>
+    </navbar>
+    <main class="fly-in-text pk-container">
         <h1>Galerie</h1>
-        <p>Hier finden Sie eine Auswahl an Werken von K�nstlername. Die Galerie wird regelm��ig mit neuen Arbeiten erg�nzt.</p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <div style="background: #eee; width: 220px; height: 160px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #aaa;">Bild 1</div>
-            <div style="background: #eee; width: 220px; height: 160px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #aaa;">Bild 2</div>
-            <div style="background: #eee; width: 220px; height: 160px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #aaa;">Bild 3</div>
-        </div>
+        <p>Bildmaterial zu K. Meine und dem Institut</p>
+
+        <section>
+            <h2>Die Büste</h2>
+            <figure style="margin: 1.5rem auto; text-align: center;">
+                <img src="../images/bueste.jpg"
+                     alt="Büste von K. Meine im Prunksaal des Wiener Musikvereins"
+                     class="photoElement" />
+                <figcaption style="color: ghostwhite; font-size: 0.85rem; margin-top: 0.75rem;">
+                    Büste von K. Meine, Prunksaal des Wiener Musikvereins<br />
+                    <em>Kürzlich als Bildnis von K. Meine (1798–1857) identifiziert</em>
+                </figcaption>
+            </figure>
+        </section>
     </main>
     <div class="footerContainer">
         <footer>
-            <p class="placeholder">
-                Copyright
-            </p>
-            <p class="correct">
-                Version 0.5.0 - Copyright 2025 K. Meine Institut + Leander Kafemann
-            </p>
+            <p class="placeholder">Copyright</p>
+            <p class="correct">Version 0.6.0 – Copyright 2025 K. Meine Institut + Leander Kafemann</p>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="https://leanderkafemann.github.io/PowerKit/powerkit.js"></script>
+    <script src="https://k-meine-institut.github.io/aboutKMeine/js/main.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/modernStyleEffects.js"></script>
+    <script src="https://k-meine-institut.github.io/aboutKMeine/js/responsive-nav.js"></script>
 </body>
 </html>

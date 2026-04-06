@@ -259,3 +259,26 @@ p.announcement {
         filter: blur(0);
         text-shadow: 0 0 12px #c8323c88;
     }
+
+@media screen and (max-width: 600px) {
+    main {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .photoElement {
+        width: 90%;
+    }
+
+    .photoElement:hover {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
