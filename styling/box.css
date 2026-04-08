@@ -18,7 +18,12 @@
     transition-delay: 0.4s;
     border-width: 10px;
     box-shadow: 0 4px 12px #bbb;
+    color: #1f2937;
 }
+
+    .oval h1, .oval h2, .oval h3, .oval h4, .oval h5, .oval h6, .oval p {
+        color: #1f2937;
+    }
 
     .oval:hover {
         width: 71%;
@@ -45,6 +50,7 @@
     box-shadow: 0 1px 2px #bbb;
     transition-delay: 0.2s;
     transition-duration: 0.5s;
+    color: #1f2937;
 }
 
     .commentOval:hover {

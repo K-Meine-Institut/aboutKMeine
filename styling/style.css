@@ -1,19 +1,22 @@
 /*
-    moderner Stil.
+    moderner Stil – PowerKit-Basis
 */
 
 html {
     background-color: black;
-    font-family: Verdana, sans-serif;
+    font-family: var(--pk-font-sans, Verdana, sans-serif);
 }
 
 main {
     margin-top: 75px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    color: ghostwhite;
+}
+
+p {
+    text-align: center;
 }
 
 body {
@@ -21,16 +24,71 @@ body {
     padding: 0;
 }
 
+/* ── Navbar – Glass Override ──────────────────────────────── */
+
+.pk-navbar {
+    background: rgba(248, 248, 255, 0.4);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border-bottom: none;
+    outline: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #bbb;
+    margin: 10px;
+    width: calc(100% - 20px);
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .pk-navbar:hover {
+        background: rgba(248, 248, 255, 0.8);
+        box-shadow: 0 2px 8px #bbb;
+    }
+
+.pk-navbar-brand {
+    font-weight: var(--pk-font-bold, bold);
+    font-size: var(--pk-text-lg, 1.1rem);
+    color: #353535;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+    .pk-navbar-brand:hover {
+        color: #00b2b2;
+        text-decoration: none;
+    }
+
+.pk-navbar .pk-nav-link {
+    color: #353535;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+}
+
+    .pk-navbar .pk-nav-link:hover {
+        color: #00b2b2;
+        background-color: rgba(229, 229, 229, 0.8);
+        transform: scale(1.02);
+    }
+
+    .pk-navbar .pk-nav-link.pk-active {
+        background-color: #e0e0e0;
+        color: #0078d7;
+        font-weight: 600;
+    }
+
+/* ── Footer – Glass Effect ────────────────────────────────── */
+
 div.footerContainer {
     text-align: center;
 }
 
-    /*div.footerContainer:hover {
-    }*/
-
 footer {
     height: 16px;
-    bottom: 0px;
+    bottom: 0;
     position: fixed;
     background-color: rgba(248, 248, 255, 0.4);
     margin-bottom: 10px;
@@ -87,81 +145,7 @@ footer {
                 transition-delay: 0.5s;
             }
 
-navbar {
-    background-color: rgba(248, 248, 255, 0.4);
-    height: 50px;
-    position: fixed;
-    backdrop-filter: blur(5px);
-    top: 0px;
-    box-shadow: 0 2px 4px #bbb;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 8px;
-    outline: 2px solid black;
-    width: calc(100% - 20px);
-    z-index: 10;
-    transition-duration: 0.3s;
-}
-
-    navbar:hover {
-        box-shadow: 0 2px 8px #bbb;
-        background-color: rgba(248, 248, 255, 0.8);
-    }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav {
-    float: right;
-}
-
-li {
-    display: inline;
-    margin: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #353535;
-    display: inline-block;
-    margin-top: 12px;
-    margin-right: 10px;
-    transition: color 0.3s, transform 0.2s;
-    border-radius: 4px;
-    padding: 3px;
-}
-
-    nav a:hover {
-        color: #00b2b2;
-        transform: scale(1.02);
-        background-color: #e5e5e5;
-    }
-
-    nav a:active {
-        font-weight: bold;
-    }
-
-    nav a.active {
-        background: #e0e0e0;
-        color: #0078d7;
-    }
-
-@media screen and (max-width: 700px) {
-    nav {
-        width: 100%;
-        margin-top: -5px;
-    }
-
-        nav li {
-            display: block;
-            background-color: #e5e5e5;
-            text-align: center;
-        }
-}
+/* ── Links ────────────────────────────────────────────────── */
 
 a {
     color: darkgray;
@@ -176,9 +160,7 @@ a {
         font-weight: bold;
     }
 
-h2 {
-    font-size: 32px;
-}
+/* ── Images ───────────────────────────────────────────────── */
 
 .photoElement {
     margin-left: auto;
@@ -195,6 +177,14 @@ h2 {
         box-shadow: 0 6px 16px #bbb;
         width: 52%;
     }
+
+img.navBarImage {
+    box-shadow: 0 2px 4px #bbb;
+    border-radius: 8px;
+    margin-left: 3px;
+}
+
+/* ── Misc ─────────────────────────────────────────────────── */
 
 details {
     text-align: center;
@@ -221,7 +211,7 @@ button.commentTimeButton {
     outline: none;
     border: none;
     font-size: medium;
-    margin: 0px;
+    margin: 0;
     transition-duration: 0.3s;
     border-radius: 4px;
 }
@@ -232,17 +222,13 @@ button.commentTimeButton {
         box-shadow: 0 1px 2px #bbb;
     }
 
-img.navBarImage {
-    box-shadow: 0 2px 4px #bbb;
-    border-radius: 8px;
-    margin-left: 3px;
-}
-
 p.announcement {
     margin-left: 10px;
     margin-right: 10px;
     color: inherit;
 }
+
+/* ── Fly-in animation ─────────────────────────────────────── */
 
 .fly-in-text {
     position: relative;
@@ -260,6 +246,8 @@ p.announcement {
         text-shadow: 0 0 12px #c8323c88;
     }
 
+/* ── Responsive ───────────────────────────────────────────── */
+
 @media screen and (max-width: 600px) {
     main {
         padding-left: 0.5rem;
@@ -270,9 +258,9 @@ p.announcement {
         width: 90%;
     }
 
-    .photoElement:hover {
-        width: 92%;
-    }
+        .photoElement:hover {
+            width: 92%;
+        }
 
     h1 {
         font-size: 1.6rem;

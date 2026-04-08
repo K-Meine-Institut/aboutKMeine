@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="800" height="550">
+  <!-- Sidewalk background -->
+  <rect width="800" height="550" fill="#b0a898"/>
+  <!-- Sidewalk tile pattern -->
+  <line x1="0" y1="183" x2="800" y2="183" stroke="#9a9088" stroke-width="2"/>
+  <line x1="0" y1="367" x2="800" y2="367" stroke="#9a9088" stroke-width="2"/>
+  <line x1="200" y1="0" x2="200" y2="550" stroke="#9a9088" stroke-width="2"/>
+  <line x1="400" y1="0" x2="400" y2="550" stroke="#9a9088" stroke-width="2"/>
+  <line x1="600" y1="0" x2="600" y2="550" stroke="#9a9088" stroke-width="2"/>
+
+  <!-- Star plaque base (brass/bronze) -->
+  <ellipse cx="400" cy="275" rx="170" ry="170" fill="#8B6914" opacity="0.3"/>
+  <ellipse cx="400" cy="275" rx="165" ry="165" fill="#c9972e"/>
+  <ellipse cx="400" cy="275" rx="160" ry="160" fill="#d4a640" stroke="#a07820" stroke-width="3"/>
+
+  <!-- Decorative ring -->
+  <ellipse cx="400" cy="275" rx="152" ry="152" fill="none" stroke="#8B6914" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Five-pointed star -->
+  <polygon
+    points="400,130 427,215 518,215 446,265 473,352 400,302 327,352 354,265 282,215 373,215"
+    fill="#8B6914" stroke="#6a4f0e" stroke-width="2"/>
+
+  <!-- Star highlight -->
+  <polygon
+    points="400,142 423,218 506,218 441,262 465,345 400,296 335,345 359,262 294,218 377,218"
+    fill="#c9972e" stroke="none" opacity="0.6"/>
+
+  <!-- Name text -->
+  <text x="400" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#3a2800" letter-spacing="3">K. MEINE</text>
+  <text x="400" y="415" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#5a3d00" letter-spacing="1">1798 – 1857</text>
+  <text x="400" y="435" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#6a4f00" letter-spacing="1">KOMPONIST</text>
+
+  <!-- "Walk of Fame" label at top -->
+  <text x="400" y="155" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5a3d00" letter-spacing="2" opacity="0.7">WALK OF FAME · WIEN</text>
+</svg>
