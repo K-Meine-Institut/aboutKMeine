@@ -13,10 +13,12 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    color: ghostwhite;
 }
 
 p {
     text-align: center;
+    color: ghostwhite;
 }
 
 body {
@@ -226,6 +228,34 @@ p.announcement {
     margin-left: 10px;
     margin-right: 10px;
     color: inherit;
+}
+
+/* ── Gallery Cards ────────────────────────────────────────── */
+
+.gallery-card-header {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-figcaption {
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+    line-height: 1.5;
+}
+
+/* ── News Badge Header ───────────────────────────────────── */
+
+.news-heading-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
 }
 
 /* ── Fly-in animation ─────────────────────────────────────── */
