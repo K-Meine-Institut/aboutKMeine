@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Page URL:', pageUrl);
 
         if (linkUrl === pageUrl) {
-            link.classList.add('active');
+            link.classList.add('pk-active');
         }
     });
 });

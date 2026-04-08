@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.getElementById("main-nav");
     const links = Array.from(nav.querySelectorAll("a"));
-    let currentIndex = links.findIndex(a => a.classList.contains("active"));
+    let currentIndex = links.findIndex(a => a.classList.contains("pk-active"));
 
     function setActive(index) {
-        links.forEach(a => a.classList.remove("active"));
-        links[index].classList.add("active");
+        links.forEach(a => a.classList.remove("pk-active"));
+        links[index].classList.add("pk-active");
         currentIndex = index;
     }
 
     function showCurrentOnly() {
         links.forEach((a, i) => {
-            a.style.display = (i === currentIndex) ? "inline-block" : "none";
+            a.style.display = (i === currentIndex) ? "inline-flex" : "none";
         });
         nav.querySelectorAll(".nav-arrow").forEach(btn => btn.style.display = "inline-block");
     }
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nav.querySelectorAll(".nav-arrow").forEach(btn => btn.style.display = "none");
     }
 
-    // Pfeile einfügen
+    // Pfeile einfï¿½gen
     if (!nav.querySelector(".nav-arrow.left")) {
         const left = document.createElement("button");
         left.innerHTML = "&#8592;";
